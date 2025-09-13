@@ -1,3 +1,4 @@
+# Build configuration
 [project]
 name = "honeypot-ssh"
 version = "0.0.1"

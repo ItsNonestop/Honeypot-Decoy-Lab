@@ -22,3 +22,5 @@
 - [x] JSONL event schema + log rotation
 - [x] IP anonymization function + tests
 - [x] Python 3.13 support and cross-platform run scripts
+- [x] README Quickstart and troubleshooting notes
+- [x] CI tests 3.11 & 3.13

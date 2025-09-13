@@ -9,6 +9,7 @@ Source IPs are anonymised and only loopback is bound by default.
 Use Docker or Python to run the skeleton locally.
 No outbound connections are made.
 This repo aims to stay small, clear and easy to extend.
+Cross-platform helper scripts are provided for Windows, macOS, and Linux.
 
 ```
 [attacker] -> [ssh server] -> [fake shell] -> [logger] -> [JSONL files]
