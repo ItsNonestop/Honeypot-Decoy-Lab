@@ -1,13 +1,16 @@
 # Tasks
 
 ## Now
-- [ ] Implement fake SSH banner + credential capture (no exec)
-- [ ] JSONL event schema + log rotation
+- [x] Implement fake SSH banner + credential capture (no exec)
+- [x] JSONL event schema + log rotation
 - [ ] Basic analyzer (top usernames/commands) + charts
 - [ ] Local dashboard (optional)
-- [ ] IP anonymization function + tests
+- [x] IP anonymization function + tests
 - [ ] Docker hardening + read-only FS, no NET_ADMIN
 - [ ] Cloud/VLAN deployment notes
+- [ ] Add rate limiting / connection backoff
+- [ ] Add idle timeout config & test
+- [ ] Add simple CLI flag `--dry-run` (no bind)
 
 ## Next
 
@@ -15,3 +18,6 @@
 
 ## Done
 - [x] Repo scaffold + CI + container smoke test
+- [x] Implement fake SSH banner + credential capture (no exec)
+- [x] JSONL event schema + log rotation
+- [x] IP anonymization function + tests

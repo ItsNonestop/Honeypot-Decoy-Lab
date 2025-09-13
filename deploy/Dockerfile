@@ -8,13 +8,14 @@ RUN useradd -m appuser
 WORKDIR /app
 
 # Copy requirements and install deps
-COPY requirements-dev.txt ./
-RUN pip install --no-cache-dir -r requirements-dev.txt
+COPY requirements.txt requirements-dev.txt ./
+RUN pip install --no-cache-dir -r requirements.txt -r requirements-dev.txt
 
-# Copy application source
+# Copy application source and config
 COPY src/ src/
 COPY config/ config/
-COPY samples/ samples/
+# Create data directory for host key and logs
+RUN mkdir -p data
 
 # Drop privileges
 USER appuser

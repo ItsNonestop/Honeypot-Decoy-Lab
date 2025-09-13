@@ -5,3 +5,6 @@
 - Introduced CI workflow and test harness.
 - Created Docker setup for container smoke test.
 - Recorded tasks and features for future development.
+- Implemented Paramiko SSH server with credential and command logging.
+- Added IP anonymisation helper (truncate default, hash optional).
+- Default bind set to loopback for safety; Docker exposes 2222 for local tests.

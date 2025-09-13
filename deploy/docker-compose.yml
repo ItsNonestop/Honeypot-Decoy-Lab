@@ -4,10 +4,13 @@ services:
     build:
       context: ..
       dockerfile: deploy/Dockerfile
-    # ports:
-    #   - "22:22"  # expose to host if desired
+    ports:
+      - "2222:2222"  # for local testing only; use isolated networks
     volumes:
       - ../config:/app/config:ro
-      - ../samples:/app/samples:ro
+      - ../data:/app/data
+    environment:
+      LOG_LEVEL: INFO
+      ANON_SALT: demo-salt
     command: python -m honeypot
-    # run in an isolated network for safety
+    # WARNING: run only on isolated networks; no outbound egress
