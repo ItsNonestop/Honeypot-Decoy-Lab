@@ -8,9 +8,11 @@ requires-python = ">=3.11,<3.14"
 addopts = "-q"
 
 [tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
 select = ["E", "F"]
 ignore = ["E501"]
-line-length = 88
 
 [tool.setuptools.packages.find]
 where = ["src"]

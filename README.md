@@ -57,3 +57,4 @@ This is a **decoy**; commands are **not executed**.
 - Package requires a different Python → pull latest; should now allow 3.13. If not, open an issue.
 - pytest not recognised → use `.\venv\Scripts\pytest.exe` on Windows or run `scripts/*/test`.
 - docker compose not found → local runs are supported; Docker is optional.
+- CI runs on Python 3.11 and 3.13.

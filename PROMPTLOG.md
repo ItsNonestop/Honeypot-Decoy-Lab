@@ -10,3 +10,4 @@
 - Default bind set to loopback for safety; Docker exposes 2222 for local tests.
 - Added cross-platform run scripts, widened Python support to 3.13, and expanded README with universal Quickstart.
 - Reconciled upstream changes, refined CI dependency installation, and reordered changelog entries.
+- Streamlined CI dependency installation and tidied task list after merge review.

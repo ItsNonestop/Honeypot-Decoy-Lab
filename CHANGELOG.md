@@ -11,3 +11,7 @@
 ## [0.2.0] - 2025-09-13
 ### Added
 - feat(server): add paramiko-based SSH honeypot with credential and command logging
+
+## [0.2.1] - 2025-09-13
+### Fixed
+- chore(ci): streamline dependency install and tidy task list
