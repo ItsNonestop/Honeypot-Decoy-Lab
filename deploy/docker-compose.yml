@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  honeypot:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    # ports:
+    #   - "22:22"  # expose to host if desired
+    volumes:
+      - ../config:/app/config:ro
+      - ../samples:/app/samples:ro
+    command: python -m honeypot
+    # run in an isolated network for safety
