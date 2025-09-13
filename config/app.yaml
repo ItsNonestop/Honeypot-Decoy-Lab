@@ -1,0 +1,16 @@
+# <!-- codex:start:app-config -->
+# Honeypot configuration
+# listen_host: address to bind the fake SSH service
+listen_host: 127.0.0.1
+# listen_port: port for the fake SSH service
+listen_port: 2222
+# banner_text: string sent on connect
+banner_text: "SSH-2.0-honeypot"
+# log_dir: where logs will be stored
+log_dir: data/logs
+# log_rotation_days: how long before logs rotate
+log_rotation_days: 7
+# ip_anonymization: method to anonymise IPs; hash or truncate
+ip_anonymization:
+  mode: truncate
+# <!-- codex:end:app-config -->
